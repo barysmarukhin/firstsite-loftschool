@@ -1,0 +1,8 @@
+{
+  "name": "firstsite",
+  "dependencies": {
+    "jquery": "1.8",
+    "modernizer": "~2.8.2",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
