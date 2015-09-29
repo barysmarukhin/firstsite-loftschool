@@ -14,12 +14,9 @@
     font-family: 'fira_sansbook';
     font-size: 27px;
     line-height: 70px;
-    margin: 0px;
-    text-indent: 21px;
-    width: 350px;
-}
-.aboutbox-body{
-	margin-top:20px;
+    margin: 0 0 21px 0;
+    padding: 0 21px;
+    display: inline-block;
 }
 .about-list{
 	list-style: none;
