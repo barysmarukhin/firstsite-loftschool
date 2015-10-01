@@ -58,7 +58,7 @@
 	margin-top: 18px;
 }
 
-.worksheet-info.skills .skills-list .skill-item{
+ .skills-list .skill-item{
 	font-family: 'proxima_nova_condensedSBd';
 	border-radius: 4px;
 	padding: 0px 7px;
@@ -82,7 +82,6 @@
 /*Опыт работы и Образование*/
  .about-item{
 	padding-bottom: 28px;
-    text-indent: 64px;
 }
  .work-icon{
 	background: url(../img/case.png) no-repeat;
@@ -97,15 +96,19 @@
 	margin-left: 55px;
 }
  .place{
-	color: #5a636b;
+    color: #5a636b;
     font-family: "fira_sansbook";
     font-size: 17px;
+    padding-left: 60px;
+    max-width: 500px;
 }
  .time{
 	color: #828990;
     font-family: "fira_sanslight";
     font-size: 15px;
     font-weight: bold;
+    padding-left: 60px;
+    max-width: 500px;
 }
 
 /*Опыт работы и Образование-конец*/

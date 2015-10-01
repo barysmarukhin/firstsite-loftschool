@@ -20,7 +20,7 @@ var gulp = require('gulp'),
 //css
 	gulp.task('css', function () {
   	 gulp.src('app/css/*.css')
-    .pipe(concatCss('bundle.css'))
+    .pipe(concatCss('bundle.css'))//Вызов соответствующей функции
     .pipe(minifyCss())
     .pipe(rename('bundle.min.css'))
     .pipe(gulp.dest('app/'))
@@ -32,10 +32,12 @@ var gulp = require('gulp'),
 //html
 gulp.task('html', function(){
 	gulp.src('app/index.html')
+  gulp.src('app/work.html')
+  gulp.src('app/contact.html')
 	.pipe(connect.reload());
 })
 
-//watch
+//watch - следит и автоматически запускает gulp при изменении css файлов
 gulp.task('watch', function(){
 	gulp.watch('app/css/*.css', ['css'])
 	gulp.watch('app/index.html', ['html'])

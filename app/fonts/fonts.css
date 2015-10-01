@@ -320,11 +320,7 @@
 
 @font-face {
     font-family: 'proxima_nova_condensedSBd';
-    src: url('proximanovacond-semibold-webfont.eot');
-    src: url('proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('proximanovacond-semibold-webfont.woff2') format('woff2'),
-         url('proximanovacond-semibold-webfont.woff') format('woff'),
-         url('proximanovacond-semibold-webfont.ttf') format('truetype');
+    src: url('ProximaNova-Semibold.otf');
     font-weight: normal;
     font-style: normal;
 

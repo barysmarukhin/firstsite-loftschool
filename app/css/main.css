@@ -31,7 +31,7 @@ body{
 	max-width: 1200px;
 	min-width: 960px;
 	height: 100%;
-	margin:0 auto;
+	margin: 0 auto;
 	position: relative;
 }
 .page-header{
@@ -43,7 +43,7 @@ body{
 .page-header .header-logo-link{
 	position: absolute;
 	top: 39px;
-	left: 100px;
+	left: 0px;
 }
 .page-header .header-logo-text{
 	position: absolute;
@@ -52,7 +52,7 @@ body{
 
 .page-header .socials{
 	position: absolute;
-	right: 100px;
+	right: 0px;
 	top:36px;
 }
 /*Шапка - конец*/
@@ -153,6 +153,7 @@ body{
 .contacts {
 	border-radius: 5px;
 	overflow: hidden;
+	margin-bottom: 26px;
 }
 .contacts .contact-item:first-child{
 	background: #3ba8c0;

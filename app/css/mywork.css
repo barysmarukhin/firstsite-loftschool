@@ -1,0 +1,41 @@
+.portfolio{
+	background-color:#eff3f7;
+	margin-bottom: 35px;
+	outline: 1px solid #000000;
+}
+.portfolio .work-header{
+	border-bottom: 3px solid #3ba8c0;
+    color: #3ba8c0;
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    line-height: 70px;
+    margin: 0 0 21px 0;
+    padding: 0 21px;
+    display: inline-block;
+    outline: 1px solid #000000;
+}
+.portfolio .portfolio-items{
+	margin: 0px;
+	padding: 19px 0;
+	outline: 1px solid #000;
+}
+.portfolio .portfolio-item{
+	list-style: none;
+	display: inline-block;
+	min-height: 127px;
+	width: 181px;
+	margin-left: 30px;
+	border:2px solid rgb( 59, 168, 192 );
+	border-radius: 4px;
+}
+
+.portfolio .portfolio-link {
+  font-size: 13px;
+  font-family: 'fira_sanslight';
+  color: #7bbed0;
+  font-style: italic;
+  text-align: center;
+  outline: 1px solid #000000;
+}
+
+
