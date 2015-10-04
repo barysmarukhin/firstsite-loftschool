@@ -15,11 +15,17 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<!--FONTS-->
 	<link rel="stylesheet" href="fonts/fonts.css">
-	<!--bower CSS-->
-	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<!--CSS-->
+	<!--build:css css/vendor.css-->
+	<!--bower:css-->
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+	<link rel="stylesheet" href="bower/tooltipster/css/tooltipster.css" />
+	<!--endbower-->
+	<!--endbuild-->
+	<!--build:css css/main.css-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/mywork.css">
+	<!--endbuild-->
 	<!--modernizr-->
 	<script src="bower/modernizer/modernizr.js"></script>	
 </head>
@@ -74,27 +80,34 @@
 				<div class="variable-content">
 					<section class="portfolio">
 						<h2 class="work-header">Мои работы</h2>
-						<ul class="portfolio-items">
-							<li class="portfolio-item">
-								<a href="#" target="_blank" class="portfolio-link">www.site.ru</a>
+						<div class="portfolio-container clearfix">
+							<div class="portfolio-item">
+								<div class="image one"><a href="#" class="imagelink">Скрытый текст</a></div>
+								<div class="sitename"><a href="#" class="textlink">www.site.ru</a></div>
 								<p class="description">Информация о проекте 1 превью 2 строки....</p>
-							</li>
-							<li class="portfolio-item">
-								<a href="#" target="_blank" class="portfolio-link">www.site.ru</a>
+							</div>
+							<div class="portfolio-item">
+								<div class="image two"><a href="#" class="imagelink">Скрытый текст</a></div>
+								<div class="sitename"><a href="#" class="textlink">www.site.ru</a></div>
 								<p class="description">Информация о проекте 2 превью 2 строки....</p>
-							</li>
-							<li class="portfolio-item">
-								<a href="#" target="_blank" class="portfolio-link">www.site.ru</a>
+							</div>
+							<div class="portfolio-item">
+								<div class="image three"><a href="#" class="imagelink">Скрытый текст</a></div>
+								<div class="sitename"><a href="#" class="textlink">www.site.ru</a></div>
 								<p class="description">Информация о проекте 3 превью 2 строки....</p>
-							</li>
-							<li class="portfolio-item">
-								<a href="#m" target="_blank" class="portfolio-link">www.site.ru</a>
+							</div>
+							<div class="portfolio-item">
+								<div class="image four"><a href="#" class="imagelink">Скрытый текст</a></div>
+								<div class="sitename"><a href="#" class="textlink">www.site.ru</a></div>
 								<p class="description">Информация о проекте 4 превью 2 строки....</p>
-							</li>
-							<li class="portfolio-item add">
-								<a href="#m" target="_blank" class="portfolio-link">Добавить проект</a>
-							</li>
-						</ul>
+							</div>
+							<div class="portfolio-item">
+								<div class="add"><a href="#" class="addlink">Скрытый текст</a>
+								<a href="#" class="addnew">Добавить проект</a>
+								</div>
+
+							</div>
+						</div>
 					</section>
 				</div> 
 			</div>
@@ -108,8 +121,14 @@
 		 <div class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>	
 		</div>
 	</footer>
-
-	<script type="text/javascript" src="bower/jquery/jquery.js"></script>
+	<!--build:js js/vendor.js-->
+	<!-- bower:js-->
+	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/tooltipster/js/jquery.tooltipster.min.js"></script>
+	<!-- endbower-->
+	<!--endbuild-->
+	<!--build:js js/main.js-->
 	<script type="text/javascript" src="js/main.js"></script>
+	<!--endbuild-->
 </body>
 </html>

@@ -15,11 +15,17 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<!--FONTS-->
 	<link rel="stylesheet" href="fonts/fonts.css">
-	<!--bower CSS-->
-	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<!--CSS-->
+	<!--build:css css/vendor.css-->
+	<!--bower:css-->
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+	<link rel="stylesheet" href="bower/tooltipster/css/tooltipster.css" />
+	<!--endbower-->
+	<!--endbuild-->
+	<!--build:css css/main.css-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/about_me.css">
+	<!--endbuild-->
 	<!--modernizr-->
 	<script src="bower/modernizer/modernizr.js"></script>	
 </head>
@@ -119,9 +125,10 @@
 							<div class="aboutbox-body clearfix">
 								<div class="jobs-wrap">
 									<ul class="about-list">
-										<li class="about-item work-icon">
-											<div class="place">Центр светодиодных и оптоэлектронных технологий</div>
-											<div class="time">Декабрь 2012 - по настоящее время</div>
+										<li class="about-item">
+											<div class="place work">Центр светодиодных и оптоэлектронных технологий
+												<p class="time">Декабрь 2012 - по настоящее время</p>
+											</div>
 										</li>
 									</ul>
 								</div>
@@ -132,13 +139,16 @@
 							<div class="aboutbox-body clearfix">
 								<div class="education-wrap">
 									<ul class="about-list">
-										<li class="about-item education-icon">
-											<div class="place">Высшее. БГУИР</div>
-											<div class="time">Сентябрь 2008 - июль 2013</div>
+										<li class="about-item">
+											<div class="place education">Высшее. БГУИР
+												<p class="time">Сентябрь 2008 - июль 2013</p>
+											</div>
 										</li>
-										<li class="about-item course-icon">
-											<div class="place">Курсы Loftschool.ru</div>
-											<div class="time">Сентябрь 2015 - по настоящее время</div>
+										<li class="about-item ">
+											<div class="place course">Курсы Loftschool.ru
+												<p class="time">Сентябрь 2015 - по настоящее время</p>
+											</div>
+											
 										</li>
 									</ul>
 								</div>
@@ -156,8 +166,14 @@
 		 <div class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>	
 		</div>
 	</footer>
-
-	<script type="text/javascript" src="bower/jquery/jquery.js"></script>
+	<!--build:js js/vendor.js-->
+	<!-- bower:js-->
+	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/tooltipster/js/jquery.tooltipster.min.js"></script>
+	<!-- endbower-->
+	<!--endbuild-->
+	<!--build:js js/main.js-->
 	<script type="text/javascript" src="js/main.js"></script>
+	<!--endbuild-->
 </body>
 </html>

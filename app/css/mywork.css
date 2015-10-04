@@ -1,7 +1,7 @@
 .portfolio{
 	background-color:#eff3f7;
 	margin-bottom: 35px;
-	outline: 1px solid #000000;
+	min-height: 841px;
 }
 .portfolio .work-header{
 	border-bottom: 3px solid #3ba8c0;
@@ -12,30 +12,89 @@
     margin: 0 0 21px 0;
     padding: 0 21px;
     display: inline-block;
-    outline: 1px solid #000000;
 }
-.portfolio .portfolio-items{
-	margin: 0px;
-	padding: 19px 0;
-	outline: 1px solid #000;
+.portfolio .portfolio-container{
+	margin-left: -10px;
 }
 .portfolio .portfolio-item{
-	list-style: none;
 	display: inline-block;
+  vertical-align: top;
 	min-height: 127px;
 	width: 181px;
 	margin-left: 30px;
-	border:2px solid rgb( 59, 168, 192 );
-	border-radius: 4px;
+	margin-bottom: 40px;
 }
-
-.portfolio .portfolio-link {
+.portfolio-item .image{
+    width: 181px;
+ 	  height: 127px;
+  	border:2px solid rgb( 59, 168, 192 );
+  	border-radius: 7px;
+  	margin-bottom: 5px;
+}
+.portfolio-item .imagelink{
+  	width: 181px;
+ 	  height: 127px;
+  	display: block;
+  	text-indent: -9999px;
+}
+.image.one{
+	background: url(../img/site1.png) no-repeat;
+}
+.image.two{
+	background: url(../img/site2.png) no-repeat;
+}
+.image.three{
+	background: url(../img/site3.png) no-repeat;
+}
+.image.four{
+	background: url(../img/site4.png) no-repeat;
+}
+.portfolio-item .sitename{
+	margin-bottom: 5px;
+}
+.portfolio-item .textlink {
+  font-size: 13px;
+  font-family: 'fira_sanslight';
+  font-style: italic;
+  color: #7bbed0;
+  margin-left: 60px;
+  text-decoration: none;
+}
+.portfolio-item .description{
+  font-size: 15px;
+  font-family: "fira_sanslight";
+  color: rgb( 74, 84, 93 );
+  text-align: center;
+  display: inline-block;
+  line-height: 20px;
+  width: 175px;
+  margin: 0 0 0 6px;
+}
+.portfolio-item .add{
+    width: 181px;
+    height: 127px;
+    border:2px dashed #3ba8c0;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+.portfolio-item .addlink{
+    background: url(../img/add.png) center no-repeat;
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin:40px 0 10px 75px;
+    text-indent: -9999px;
+}
+.portfolio-item .addnew{
   font-size: 13px;
   font-family: 'fira_sanslight';
   color: #7bbed0;
-  font-style: italic;
-  text-align: center;
-  outline: 1px solid #000000;
+  width: 181px;
+  margin-left: 40px;
+  text-decoration: none;
 }
+
+
+
 
 

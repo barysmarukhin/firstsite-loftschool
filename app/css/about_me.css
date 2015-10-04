@@ -83,18 +83,7 @@
  .about-item{
 	padding-bottom: 28px;
 }
- .work-icon{
-	background: url(../img/case.png) no-repeat;
-	margin-left: 55px;
-}
-.education-icon{
-	background: url(../img/hat.png) no-repeat;
-	margin-left: 55px;
-}
-.course-icon{
-	background: url(../img/note.png) no-repeat;
-	margin-left: 55px;
-}
+
  .place{
     color: #5a636b;
     font-family: "fira_sansbook";
@@ -102,13 +91,27 @@
     padding-left: 60px;
     max-width: 500px;
 }
- .time{
+ .place.work{
+    background: url(../img/case.png) left center no-repeat;
+	margin-left: 55px;
+}
+ .place.education{
+    background: url(../img/hat.png) left center no-repeat;
+	margin-left: 55px;
+}
+ .place.course{
+    background: url(../img/note.png) left center no-repeat;
+	margin-left: 55px;
+}
+ .place .time{
 	color: #828990;
     font-family: "fira_sanslight";
     font-size: 15px;
     font-weight: bold;
     padding-left: 60px;
     max-width: 500px;
+    margin:0;
+    padding: 0;
 }
 
 /*Опыт работы и Образование-конец*/
