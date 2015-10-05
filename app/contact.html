@@ -78,7 +78,29 @@
 				</aside>
 	<!-- Изменяемый контент-->
 				<div class="variable-content">
-					<section class="aboutbox">
+					<section class="contactbox">
+						<h2 class="contact-header">У вас интересный проект? Напишите мне</h2>
+						<div class="formfield clearfix">
+							<form name="feedback" method="post" action="">
+								<div class="leftnote">
+									<label for="name" class="note">Имя</label>
+									<input type="text" name="name" id="name" class="insidetext" placeholder="Как к Вам обращаться">
+								</div>
+								<div class="rightnote">
+								<label for="email" class="note ">Email</label>
+								<input type="email" name="email" id="email" class="insidetext" placeholder="Куда мне писать">
+								</div>
+								<label for="message" class="note">Сообщение</label>
+								<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Кратко в чем суть"></textarea>
+								 <label for="captcha" class="note">Введите код, указанный на картинке</label>
+								<div class="captcha"></div>
+								<input type="text" name="capcha" id="captcha" class="enterfield" placeholder="Введите код">
+								<div class="control">
+				                    <input type="submit" value="Отправить" class="button left">
+				                    <input type="reset" value="Очистить" class="button right">
+				                </div> 
+							</form>
+						</div>
 					</section>
 				</div> 
 			</div>

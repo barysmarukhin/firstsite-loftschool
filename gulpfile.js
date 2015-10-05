@@ -17,7 +17,25 @@ var gulp = require('gulp'),
  clean = require('gulp-clean'),//Для очистки папки dist
  sftp = require('gulp-sftp');
 
-//sftp
+//clean - очистка файлов в заданной папке
+gulp.task('clean', function () {
+    return gulp.src('dist', {read: false})
+        .pipe(clean());
+});
+
+//Build - создает копию проекта для отправки на удаленный сервер
+gulp.task('build',['clean'], function(){
+  var assets = useref.assets()
+  return gulp.src('app/*.html') 
+  .pipe(assets)
+  .pipe(gulpif('*.js', uglify()))//минифицируем скрипты
+  .pipe(gulpif('*.css', minifyCss()))//минифицируем стили
+  .pipe(assets.restore())
+  .pipe(useref())//делаем ссылки на минифицированные файлы в html документах
+  .pipe(gulp.dest('dist'));
+})
+
+//sftp - отправка файлов из папки dist на удаленный сервер
  gulp.task('sftp', function () {
     return gulp.src('dist')
         .pipe(sftp({
@@ -28,13 +46,7 @@ var gulp = require('gulp'),
         }));
 });
 
-//clean
-gulp.task('clean', function () {
-    return gulp.src('dist', {read: false})
-        .pipe(clean());
-});
-
-//wiredep
+//bower - запись в index.html файлов, загруженных и обновленных через bower
   gulp.task('bower', function () {
   gulp.src('app/index.html')
     .pipe(wiredep({
@@ -43,20 +55,7 @@ gulp.task('clean', function () {
     .pipe(gulp.dest('app/'));
 });
 
-//Build
-gulp.task('build',['clean'], function(){
-  var assets = useref.assets()
-
-  return gulp.src('app/*.html') 
-  .pipe(assets)
-  .pipe(gulpif('*.js', uglify()))
-  .pipe(gulpif('*.css', minifyCss()))
-  .pipe(assets.restore())
-  .pipe(useref())
-  .pipe(gulp.dest('dist'));
-})
-
-//server connect
+//server connect - подключаем livereload
  	gulp.task('connect', function() {
   connect.server({
     root: 'app',
@@ -64,7 +63,7 @@ gulp.task('build',['clean'], function(){
   });
 });
 
-//clear cash
+//clear cash - добавление хэш суммы к ссылкам на стили и скрипты
 gulp.task('rev_append', function() {
   gulp.src('app/*.html')
     .pipe(rev_append())
@@ -75,13 +74,14 @@ gulp.task('rev_append', function() {
     //gulp.src('scss/style.scss') путь для sass, в папку scss вложена папка settings с файлом _settings.scss, вызывается через gulp css
     //.pipe(sass()) //вызов sass
      gulp.src('app/css/*.css')
-    .pipe(concatCss('bundle.css')) 
-    .pipe(rename('bundle.min.css'))
-    .pipe(gulp.dest('app/'))
-    .pipe(prefix('last 2 versions','>1%','ie 9'))
+    //.pipe(concatCss('bundle.css')) 
+    //.pipe(rename('bundle.min.css'))
+    //.pipe(gulp.dest('app/'))
+    //.pipe(prefix('last 2 versions','>1%','ie 9'))
     .pipe(connect.reload());
     //.pipe(notify('Done!'));
 });
+  
 //html
 gulp.task('html', function () {
     gulp.src('app/*.html')
