@@ -77,7 +77,7 @@ gulp.task('rev_append', function() {
     //.pipe(concatCss('bundle.css')) 
     //.pipe(rename('bundle.min.css'))
     //.pipe(gulp.dest('app/'))
-    //.pipe(prefix('last 2 versions','>1%','ie 9'))
+    .pipe(prefix('last 2 versions','>1%','ie 9'))
     .pipe(connect.reload());
     //.pipe(notify('Done!'));
 });
