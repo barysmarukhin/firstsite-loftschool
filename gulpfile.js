@@ -15,7 +15,8 @@ var gulp = require('gulp'),
  rev_append = require('gulp-rev-append'),//Плагин для очистки кеширования файлов
  notify = require('gulp-notify'),
  clean = require('gulp-clean'),//Для очистки папки dist
- sftp = require('gulp-sftp');
+ sftp = require('gulp-sftp'),
+ browserSync = require('browser-sync');
 
 //clean - очистка файлов в заданной папке
 gulp.task('clean', function () {
@@ -88,12 +89,41 @@ gulp.task('html', function () {
     .pipe(connect.reload());
 });
 
-//watch - следит и автоматически запускает gulp при изменении файлов
+//js
+gulp.task('js', function () {
+    gulp.src('app/js/**/*.js')
+    .pipe(connect.reload());
+});
+
+//browserSync
+gulp.task('server',function(){
+	browserSync({
+		port:9000,
+		server:{
+			baseDir:'app'
+		}
+	});
+});
+
+//watch-browserSync 
+gulp.task('browserwatch',function(){
+	gulp.watch([
+			'app/*.html',
+			'app/css/**/*.css',
+			'app/js/**/*.js',
+		]).on('change',browserSync.reload);
+});
+
+
+//watch livereload- следит и автоматически запускает gulp при изменении файлов
 gulp.task('watch', function(){
 	gulp.watch('app/css/*.css', ['css'])
 	gulp.watch('app/*.html', ['html'])
-  gulp.watch('bower.json', ['bower'])
+  	gulp.watch('bower.json', ['bower'])
 })
 
-//default
-gulp.task('default', ['connect','css', 'watch','html']);
+//default через livereload
+//gulp.task('default', ['connect','css', 'watch','html','js']);
+
+//default через browsersync
+gulp.task('default', ['server','browserwatch']);
