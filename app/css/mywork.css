@@ -98,7 +98,7 @@
 
 /*Всплывающее окно*/
 .modal-wrapper{
-   min-height: 510px;
+   height: 100%;
    max-width: 365px;
    border-radius:5px;
    background-color: #eff3f7;
@@ -108,7 +108,9 @@
  .modal-header{
     background-color: rgb( 72, 203, 232 );
     position: relative;
+    border-radius:5px;
     border-bottom: 10px solid rgb( 103, 223, 250 );
+    margin-bottom: 5px;
 }
 
  .b-close{
@@ -213,6 +215,14 @@ padding: 0 20px;
   width: 100%;
 }
 
+input::-webkit-input-placeholder { 
+  color: #48cbe8; 
+}
+
+textarea::-webkit-input-placeholder { 
+  color: #48cbe8; 
+}
+
  .textarea{
   display: block;
   height: 110px;
@@ -224,6 +234,7 @@ padding: 0 20px;
 }
 .btn-wrapp{
   margin-left:85px;
+  margin-bottom: 30px;
 }
 
 .btn {

@@ -25,6 +25,7 @@ var myModule = (function(){
 			transition:'slideDown',
 			onClose: function(){
 				form.find('.server-mes').text('').hide();
+				form.trigger("reset");
 			}
 		});
 	};
@@ -38,10 +39,12 @@ var myModule = (function(){
 		//объявляем переменные
 		var form = $(this),//представление формы как jquery объекта
 			url='add_project.php',//адрес, по которому будет происходить запрос
-			myServerGiveMeAnAnswer = _ajaxForm(form,url);
+				defObj = _ajaxForm(form,url);
 
 		//запрос на сервер
-		myServerGiveMeAnAnswer.done(function(ans)//в скобках укзаны данные, полученные их выходного массива, сформированного в php файле
+		//проверяем, а был ли запрос
+		if(defObj){
+		defObj.done(function(ans)//в скобках указаны данные, полученные их выходного массива, сформированного в php файле
 		 {
 			console.log(ans);
 
@@ -57,7 +60,7 @@ var myModule = (function(){
 				successBox.hide();
 				errorBox.text(ans.text).show();
 			}
-		})
+		})}
 	};
 
 //Универсальная функция
@@ -69,7 +72,7 @@ var myModule = (function(){
 //3. вернуть ответ с сервера
 	var _ajaxForm = function(form,url){	
 
-		//if(!valid) return false;
+		if(!validation.validateForm(form)) return false;
 
 		data = form.serialize();//сбор данных из формы
 		

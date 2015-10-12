@@ -120,3 +120,11 @@
 .button.right{
 	float: right;
 }
+
+input::-webkit-input-placeholder { 
+  color: #48cbe8; 
+}
+
+textarea::-webkit-input-placeholder { 
+  color: #48cbe8; 
+}

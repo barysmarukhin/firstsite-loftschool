@@ -20,6 +20,7 @@
 	<!--bower:css-->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
 	<link rel="stylesheet" href="bower/tooltipster/css/tooltipster.css" />
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<!--endbower-->
 	<!--endbuild-->
 	<!--build:css css/main.css-->
@@ -81,20 +82,20 @@
 					<section class="contactbox">
 						<h2 class="contact-header">У вас интересный проект? Напишите мне</h2>
 						<div class="formfield clearfix">
-							<form name="feedback" method="post" action="">
+							<form name="feedback" role="form" id="contact-me">
 								<div class="leftnote">
 									<label for="name" class="note">Имя</label>
-									<input type="text" name="name" id="name" class="insidetext" placeholder="Как к Вам обращаться">
+									<input type="text" name="name" id="name" class="insidetext" qtip-position="left" qtip-content="Вы не ввели имя" placeholder="Как к Вам обращаться">
 								</div>
 								<div class="rightnote">
 								<label for="email" class="note ">Email</label>
-								<input type="email" name="email" id="email" class="insidetext" placeholder="Куда мне писать">
+								<input type="email" name="email" id="email" class="insidetext" qtip-position="right" qtip-content="Вы не ввели email" placeholder="Куда мне писать">
 								</div>
 								<label for="message" class="note">Сообщение</label>
-								<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Кратко в чем суть"></textarea>
+								<textarea class="message" name="message" id="message" cols="30" rows="10" qtip-content="Что Вы от меня хотите?" placeholder="Кратко в чем суть"></textarea>
 								 <label for="captcha" class="note">Введите код, указанный на картинке</label>
 								<div class="captcha"></div>
-								<input type="text" name="capcha" id="captcha" class="enterfield" placeholder="Введите код">
+								<input qtip-content="Вы не ввели код" type="text" name="capcha" id="captcha" class="enterfield" qtip-position="right" placeholder="Введите код">
 								<div class="control">
 				                    <input type="submit" value="Отправить" class="button left">
 				                    <input type="reset" value="Очистить" class="button right">
@@ -117,11 +118,19 @@
 	<!--build:js js/vendor.js-->
 	<!-- bower:js-->
 	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/eventEmitter/EventEmitter.js"></script>
+	<script src="bower/eventie/eventie.js"></script>
+	<script src="bower/imagesloaded/imagesloaded.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="bower/qtip2/basic/jquery.qtip.js"></script>
 	<script src="bower/tooltipster/js/jquery.tooltipster.min.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js" ></script>
 	<!-- endbower-->
 	<!--endbuild-->
 	<!--build:js js/main.js-->
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/contact_me.js"></script>
+	<script type="text/javascript" src="js/validation.js"></script>
 	<!--endbuild-->
 </body>
 </html>

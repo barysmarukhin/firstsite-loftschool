@@ -49,7 +49,7 @@ gulp.task('build',['clean'], function(){
 
 //bower - запись в index.html файлов, загруженных и обновленных через bower
   gulp.task('bower', function () {
-  gulp.src('app/index.html')
+  gulp.src('app/work.html')
     .pipe(wiredep({
       directory:"app/bower"
     }))
