@@ -52,7 +52,7 @@ var validation = (function(){
 				},
 				position: position,
 				style:{
-					classes:'qtip-mystyle qtip-rounded',
+					classes: 'qtip-mystyle qtip-rounded',
 					tip:{
 						height:10,
 						width:16

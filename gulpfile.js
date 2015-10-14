@@ -11,12 +11,13 @@ var gulp = require('gulp'),
  useref = require('gulp-useref'),//Плагин постоения ссылок на скрипты и стили
  uglify = require('gulp-uglify'),//Плагин, минифицирующий javascript
  gulpif = require('gulp-if'),//Плагин, фильтрующий подключенные к index.html файлы
- sass = require('gulp-sass'),//Плагин, позволяющий работать с sass предпроцессором
+ sass = require('gulp-sass'),//Плагин, позволяющий работать с sass препроцессором
  rev_append = require('gulp-rev-append'),//Плагин для очистки кеширования файлов
  notify = require('gulp-notify'),
  clean = require('gulp-clean'),//Для очистки папки dist
  sftp = require('gulp-sftp'),
- browserSync = require('browser-sync');
+ browserSync = require('browser-sync'),
+ phpconnecnt = require('gulp-connect-php');
 
 //clean - очистка файлов в заданной папке
 gulp.task('clean', function () {
@@ -108,6 +109,7 @@ gulp.task('server',function(){
 //watch-browserSync 
 gulp.task('browserwatch',function(){
 	gulp.watch([
+      'app/*.php',
 			'app/*.html',
 			'app/css/**/*.css',
 			'app/js/**/*.js',

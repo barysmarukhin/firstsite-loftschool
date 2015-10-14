@@ -40,19 +40,19 @@
 				<div class="login">
 					<h1 class="log">Авторизируйтесь</h1>
 					<div class="line"></div>
-					<div class="cont">
+					<form name="login" role="form" id="contact-me" class="cont">
 						<div class="come">
-							<h2 class="name2">Логин</h2>
-							<input type="text" placeholder="Введите логин" class="inp">
+							<label for="login" class="name2">Логин</label>
+							<input qtip-content="Вы не ввели логин" qtip-position="left" id="login" type="text" placeholder="Введите логин" class="inp">
 						</div>
 						<div class="come">
-							<h2 class="name2">Пароль</h2>
-							<input type="text" placeholder="Введите пароль" class="inp">
+							<label for="password" class="name2">Пароль</label>
+							<input qtip-content="Вы не ввели пароль" qtip-position="left" id="password" type="text" placeholder="Введите пароль" class="inp">
 						</div>
 						<div class="ent">
 							<button class="enter">Войти</button>
 						</div>
-					</div>	
+					</form>	
 				</div>
 			</div>
 		</div>
@@ -68,18 +68,12 @@
 	<!--build:js js/vendor.js-->
 	<!-- bower:js-->
 	<script src="bower/jquery/jquery.js"></script>
-	<script src="bower/eventEmitter/EventEmitter.js"></script>
-	<script src="bower/eventie/eventie.js"></script>
-	<script src="bower/imagesloaded/imagesloaded.js"></script>
 	<script src="bower/qtip2/jquery.qtip.js"></script>
-	<script src="bower/qtip2/basic/jquery.qtip.js"></script>
-	<script src="bower/tooltipster/js/jquery.tooltipster.min.js"></script>
-	<script src="bower/bPopup/jquery.bpopup.js" ></script>
 	<!-- endbower-->
 	<!--endbuild-->
 	<!--build:js js/main.js-->
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/add_project.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
 	<script type="text/javascript" src="js/validation.js"></script>
 	<!--endbuild-->
 </body>

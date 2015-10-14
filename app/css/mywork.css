@@ -23,6 +23,7 @@
 	width: 181px;
 	margin-left: 30px;
 	margin-bottom: 40px;
+
 }
 .portfolio-item .image{
     width: 181px;
@@ -30,24 +31,35 @@
   	border:2px solid rgb( 59, 168, 192 );
   	border-radius: 7px;
   	margin-bottom: 5px;
+    position:relative;
+    background-color: rgba(1, 108, 164, 0.75);
 }
+.hovertext{
+  border-width: 2.5px;
+  border-color: rgb( 239, 243, 247 );
+  border-style: solid;
+  border-radius: 4px;
+  position: absolute;
+  left: 55px;
+  top: 37px;
+  width: 63px;
+  height: 18px;
+  font-size: 12px;
+  padding: 3px;
+  font-family: 'fira_sansbook';
+  color: rgb( 239, 243, 247 );
+  text-align: center; 
+}
+
 .portfolio-item .imagelink{
-  	width: 181px;
- 	  height: 127px;
   	display: block;
-  	text-indent: -9999px;
+    width: 181px;
+    height: 127px;
+    position: absolute;
 }
-.image.one{
-	background: url(../img/site1.png) no-repeat;
-}
-.image.two{
-	background: url(../img/site2.png) no-repeat;
-}
-.image.three{
-	background: url(../img/site3.png) no-repeat;
-}
-.image.four{
-	background: url(../img/site4.png) no-repeat;
+
+.imagelink .linktext{
+  text-indent: -9999px;
 }
 .portfolio-item .sitename{
 	margin-bottom: 5px;
@@ -95,6 +107,7 @@
   padding-top: 75px;
   margin-left:40px;
 }
+
 
 /*Всплывающее окно*/
 .modal-wrapper{
@@ -264,5 +277,13 @@ textarea::-webkit-input-placeholder {
 }
 
 
-
+.Скругленный_прямоугольник_14_копия {
+  border-width: 2.5px;
+  border-color: rgb( 239, 243, 247 );
+  border-style: solid;
+  border-radius: 4px;
+  width: 63px;
+  height: 18px;
+  z-index: 132;
+}
 
