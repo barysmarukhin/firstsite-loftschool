@@ -10,11 +10,45 @@ var myModule = (function(){
 	var _setUpListeners=function(){
 		$('#add-new-item').on('click', _showModal);//открыть модальное окно
 		$('#add-new-project').on('submit',_addProject);//добавление проекта
+		$('#fileupload').on('change', _changefileUpload); //добавление файла
 		};
+
+//Изменяет файл аплоад
+  var _changefileUpload = function() {
+    var input = $(this), //инпут type="file"
+        filename = input.val(); //имя загруженного элемент
+        filename = getNameFromPath(filename); //Передаем функции значение input
+
+        // Получаем название файла из пути
+          function getNameFromPath () {
+              return filename.replace(/\\/g, '/').replace(/.*\//, ''); //Получаем название файла из пути
+          }
+
+        //   // проверка на валидность файла
+        //   function isImg ((filename) {
+        //     var validFile = /\.(jpeg|jpg|png|gif)$/i.test(filename);
+        //     return validFile;
+        //
+        //   if (!validFile) {
+        //     errorBox.hide();
+        //     successBox.text(ans.text).show();
+        //   } else {
+        //     successBox.hide();
+        //     errorBox.text(ans.text).show();
+        //   }
+        // }
+
+      // console.log(filename);
+    $('#filename')
+      .val(filename)
+      .trigger('hideTooltipMy')
+      .removeClass('has-error');
+
+  };
+
 
 //Работает с модальным окном
 	var _showModal=function(e){
-		console.log('Вызов модального окна');
 		e.preventDefault();//сброс начальных настроек для ссылки на попап
 
 		var divPopup = $('#new-project-popup'),

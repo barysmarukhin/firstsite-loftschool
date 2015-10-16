@@ -96,7 +96,7 @@
 }
 .formfield .button{
 	padding: 8px 21px 4px;
-    background-color: #48cbe8;
+    
     border-radius: 5px;
     color: white;
     font-family: 'fira_sansbook';
@@ -106,19 +106,21 @@
     box-shadow: 0px 3px 0 0 #3ba8c0;
 }
 .button:hover{
-    background-color: #9ac5f0;
+    background-color: #9ac5f0!important;
 }
 
 .buttton:active{
-  background-color: #9ac5f0;
+  background-color: #9ac5f0!important;
 }
 
 .button.left{
 	float: left;
+    background-color: #48cbe8;
 }
 
 .button.right{
 	float: right;
+    background-color: #849db5;
 }
 
 input::-webkit-input-placeholder { 

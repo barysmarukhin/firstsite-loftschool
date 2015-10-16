@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	console.log('Я на главной странице');
 	
 	$('.image img').hover(function() {
 		$(this).stop().animate({
@@ -10,6 +9,10 @@ $(document).ready(function() {
 			opacity:1
 		}, 400);
 	});
+
+	if(!Modernizr.input.placeholder){
+	$('input, textarea').placeholder();
+	}
 });
 
 

@@ -6,6 +6,7 @@ var validation = (function(){
 	var _setUpListeners=function(){
 		$('form').on('keydown', '.has-error',_removeError);
 		$('form').on('reset', _clearForm);
+		$('form').on('click', '.has-error', _removeError);
 		//прослушка событий
 	};
 
@@ -15,7 +16,7 @@ var validation = (function(){
 
 	var _clearForm = function(form){
 		var form = $(this);
-		form.find('.input,.textarea').trigger('hideTooltipMy');
+		form.find('input,textarea').trigger('hideTooltipMy');
 		form.find('.has-error').removeClass('has-error');
 	};
 
@@ -72,8 +73,12 @@ var validation = (function(){
 			var element =$(val),
 				val = element.val(),//берем значение
 				pos = element.attr('qtip-position');
+			
+			if (element.attr('id')==='filename'){
+				val=_isImg(val)?val:'';
+			}
 
-			if(val.length === 0){
+			if(val.length === 0 ){
 				element.addClass('has-error');
 				_createQtip(element,pos);
 				valid = false;
@@ -83,7 +88,11 @@ var validation = (function(){
 		return valid;
 
 	};
-		//возвращает объект(публичные методы)
+	var _isImg=function(filename){
+		return /\.(jpeg|jpg|png|gif)$/i.test(filename);
+	};
+
+	//возвращает объект(публичные методы)
 	return {
 		init:init,
 		validateForm:validateForm

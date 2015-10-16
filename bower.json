@@ -6,6 +6,7 @@
     "modernizer": "~2.8.2",
     "normalize-css": "normalize.css#~3.0.3",
     "qtip2": "~2.2.1",
-    "tooltipster": "~3.3.0"
+    "tooltipster": "~3.3.0",
+    "jquery-placeholder": "~2.1.3"
   }
 }
