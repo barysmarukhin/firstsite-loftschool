@@ -10,9 +10,6 @@ $(document).ready(function() {
 		}, 400);
 	});
 
-	if(!Modernizr.input.placeholder){
-	$('input, textarea').placeholder();
-	}
 });
 
 
