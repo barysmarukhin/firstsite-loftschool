@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<!-- Просим IE переключиться на последнюю версию-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Корректируем масштабирование на разных устройствах-->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Первый проект</title>
+	<!--SEO-->
+	<meta name="description" content="loftschool_homework">
+	<meta name="keywords" content="loftschool_homework">
+	<meta name="author" content="Barys Marukhin">
+	<!--favicon.ico-->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<!--FONTS-->
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<!--CSS-->
+	<!--build:css css/vendor.css-->
+	<!--bower:css-->
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+	<!--endbower-->
+	<!--endbuild-->
+	<!--build:css css/main.css-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/mywork.css">
+	<!--endbuild-->
+	<!--modernizr-->
+	<script src="bower/modernizer/modernizr.js"></script>	
+</head>
+<body>
+	<!-- [if lt IE 7]> 
+	<p class="browsegappy"> Вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/"> обновите </a></p>
+	</![endif]--> 
+	
+	<div class="wrapper">
+		<div class="main-content">
+			<header class="page-header">
+				<div class="container-big">
+					<a href="index.html" class ="header-logo-link"><img src="img/logo.png" alt="logo" class="logo-img">
+					<span class="header-logo-text">Сайт портфолио</span>
+					</a>	
+				<ul class="socials">
+					<li class="socials-item">
+						<a href="http://vk.com" target="_blank" class="socials-link vk">vk.com</a>
+					</li>
+					<li class="socials-item">
+						<a href="http://twitter.com" target="_blank" class="socials-link tw">twitter.com</a>
+					</li>
+					<li class="socials-item">
+						<a href="http://facebook.com" target="_blank" class="socials-link fb">facebook.com</a>
+					</li>
+					<li class="socials-item">
+						<a href="http://github.com" target="_blank" class="socials-link gt">github.com</a>
+					</li>
+				</ul>
+				</div>
+			</header>
+			<div class="container">
+	<!-- Сайдбар--> 
+				<aside class="sidebar">
+					<nav class="navigation">
+						<ul class="navigation-list">
+		                	<li class="navigation-item"><a href="/" class="navigation-link">Обо мне</a></li>
+		                	<li class="navigation-item current"><a href="/work.html" class="navigation-link">Мои работы</a></li>
+		                	<li class="navigation-item"><a href="/contact.html" class="navigation-link">Связаться со мной</a></li>
+	               		</ul>
+               		</nav>
+               		<address class="contacts">
+               			<ul class="navigation-list">
+               				<li class="contact-item">Контакты</li>
+		                	<li class="contact-item mail"><a class="contact-link" href="mailto:delfinchick90@gmail.com">delfinchick90@gmail.com</a></li>
+		                	<li class="contact-item phone"><a class="contact-link" href="tel:+375296115560">+375296115560</a></li>
+		                	<li class="contact-item skype"><a class="contact-link" href="skype:delfinchick216">delfinchick216</a></li>
+	               		</ul>
+               		</address>
+				</aside>
+	<!-- Изменяемый контент-->
+				<div class="variable-content">
+					<section class="portfolio">
+						<h2 class="work-header">Мои работы</h2>
+						<div class="portfolio-container clearfix">
+							<div class="portfolio-item">
+								<div class="image"><p class="hovertext">www.site.ru</p><a href="#" class="imagelink"><img class="picture" src="img/site1.png"><p class="linktext">www.site.ru</p></a></div>
+								<div class="sitename"><a href="#" class="textlink">www.site.ru</a></div>
+								<p class="description">Информация о проекте 1 превью 2 строки....</p>
+							</div>
+							<div class="portfolio-item">
+								<div class="image"><p class="hovertext">www.site.ru</p><a href="#" class="imagelink"><img class="picture" src="img/site2.png"><p class="linktext">www.site.ru</p></a></div>
+								<div class="sitename"><a href="#" class="textlink">www.site.ru</a></div>
+								<p class="description">Информация о проекте 2 превью 2 строки....</p>
+							</div>
+							<div class="portfolio-item">
+								<div class="image"><p class="hovertext">www.site.ru</p><a href="#" class="imagelink"><img class="picture" src="img/site3.png"><p class="linktext">www.site.ru</p></a></div>
+								<div class="sitename"><a href="#" class="textlink">www.site.ru</a></div>
+								<p class="description">Информация о проекте 3 превью 2 строки....</p>
+							</div>
+							<div class="portfolio-item">
+								<div class="image"><p class="hovertext">www.site.ru</p><a href="#" class="imagelink"><img class="picture" src="img/site4.png"><p class="linktext">www.site.ru</p></a></div>
+								<div class="sitename"><a href="#" class="textlink">www.site.ru</a></div>
+								<p class="description">Информация о проекте 4 превью 2 строки....</p>
+							</div>
+							<div class="portfolio-item">
+								<div class="add"><a id="add-new-item" href="#" class="addlink">
+								<div class="addnew">Добавить проект</div></a>
+								</div>
+
+							</div>
+						</div>
+					</section>
+					<div id="new-project-popup">
+						<div class="modal-wrapper">
+							<div class="modal-header">
+								<button type="button" class="b-close"></button>
+								<h4 class="modal-title">Добавление проекта</h4>
+							</div>
+							<div class="modal-body">
+								<form id="add-new-project" role="form" class="form">
+									<div class="server-mes error-mes"></div>
+									<div class="server-mes success-mes"></div>
+									<div class="form-group">
+										<label for="projectName" class="label">Название проекта</label>
+										<input id="projectName" name="projectName" type="text" placeholder="Введите название" qtip-content="Вы не ввели название" class="input">
+									</div>
+									<div class="form-group">
+										<div class="fileupload-wrapper">
+											<span class="label">Картинка проекта</span>
+											<label class="fileupload-label">
+												<input id="fileupload" type="file" name="files[]" class="fileupload">
+												<input id="fileurl" type="hidden" class="fileurl">
+											</label>
+											<input id="filename" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение" class="input">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="projectUrl" class="label">URL проекта</label>
+										<input id="projectUrl" name="projectUrl" type="text" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку" class="input">
+									</div>
+									<div class="form-group">
+										<label for="projectDesc" class="label">Описание</label>
+										<textarea id="projectDesc" name="text" rows="3" placeholder="Пара слов о Вашем проекте" qtip-content="Описание проекта обязательно" class="textarea"></textarea>
+									</div>
+									<div class="btn-wrapp">
+										<button type="submit" class="btn">Добавить</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<footer class="page-footer">
+		<div class="container">	
+		 <div class="lock">
+		 	<a href="login.html" class="lock-inner">Войти</a>
+		 </div>	
+		 <div class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>	
+		</div>
+	</footer>
+	<!--build:js js/vendor.js-->
+	<!-- bower:js-->
+	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js" ></script>
+	<script type="bower/jquery-placeholder/jquery.placeholder.js"></script>
+	<!-- endbower-->
+	<!--endbuild-->
+	<!--build:js js/main.js-->
+	<script type="text/javascript" src="js/console-ie8.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/placeholder.js"></script>
+	<script type="text/javascript" src="js/add_project.js"></script>
+	<script type="text/javascript" src="js/validation.js"></script>
+	<!--endbuild-->
+</body>
+</html>

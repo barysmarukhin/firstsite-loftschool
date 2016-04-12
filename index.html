@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<!-- Просим IE переключиться на последнюю версию-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Корректируем масштабирование на разных устройствах-->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Первый проект</title>
+	<!--SEO-->
+	<meta name="description" content="loftschool_homework">
+	<meta name="keywords" content="loftschool_homework">
+	<meta name="author" content="Barys Marukhin">
+	<!--favicon.ico-->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<!--FONTS-->
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<!--CSS-->
+	<!--build:css css/vendor.css-->
+	<!--bower:css-->
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+	<!--endbower-->
+	<!--endbuild-->
+	<!--build:css css/main.css-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/about_me.css">
+	<!--endbuild-->
+	<!--modernizr-->
+	<script src="bower/modernizer/modernizr.js"></script>	
+</head>
+<body>
+	<!-- [if lt IE 7]> 
+	<p class="browsegappy"> Вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/"> обновите </a></p>
+	</![endif]--> 
+	
+	<div class="wrapper">
+		<div class="main-content">
+			<header class="page-header">
+				<div class="container-big">
+					<a href="index.html" class ="header-logo-link"><img src="img/logo.png" alt="logo" class="logo-img">
+					<span class="header-logo-text">Сайт портфолио</span>
+					</a>	
+				<ul class="socials">
+					<li class="socials-item">
+						<a href="http://vk.com" target="_blank" class="socials-link vk">vk.com</a>
+					</li>
+					<li class="socials-item">
+						<a href="http://twitter.com" target="_blank" class="socials-link tw">twitter.com</a>
+					</li>
+					<li class="socials-item">
+						<a href="http://facebook.com" target="_blank" class="socials-link fb">facebook.com</a>
+					</li>
+					<li class="socials-item">
+						<a href="http://github.com" target="_blank" class="socials-link gt">github.com</a>
+					</li>
+				</ul>
+				</div>
+			</header>
+			<div class="container">
+	<!-- Сайдбар--> 
+				<aside class="sidebar">
+					<nav class="navigation">
+						<ul class="navigation-list">
+		                	<li class="navigation-item current"><a href="/" class="navigation-link">Обо мне</a></li>
+		                	<li class="navigation-item"><a href="/work.html" class="navigation-link">Мои работы</a></li>
+		                	<li class="navigation-item"><a href="/contact.html" class="navigation-link">Связаться со мной</a></li>
+	               		</ul>
+               		</nav>
+               		<address class="contacts">
+               			<ul class="navigation-list">
+               				<li class="contact-item">Контакты</li>
+		                	<li class="contact-item mail"><a class="contact-link" href="mailto:delfinchick90@gmail.com">delfinchick90@gmail.com</a></li>
+		                	<li class="contact-item phone"><a class="contact-link" href="tel:+375296115560">+375296115560</a></li>
+		                	<li class="contact-item skype"><a class="contact-link" href="skype:delfinchick216">delfinchick216</a></li>
+	               		</ul>
+               		</address>
+				</aside>
+	<!-- Изменяемый контент-->
+				<div class="variable-content">
+					<section class="aboutbox">
+							<h2 class="aboutbox-header">Основная информация</h2>
+							<div class="aboutbox-body clearfix">
+								<div class="image-wrap">
+									<div class="avatar-box">
+									<img src="img/face.jpg" alt="Борис Марухин" class="avatar">
+									</div>
+								</div>
+								<div class="worksheet-wrap">
+									<ul class="about-list">
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what">Меня зовут:</div>
+											<div class="worksheet-info">Марухин Борис</div>
+										</li>
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what">Мой возраст:</div>
+											<div class="worksheet-info">25 лет</div>
+										</li>
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what">Мой город:</div>
+											<div class="worksheet-info">Минск, Беларусь</div>
+										</li>
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what">Моя специализация:</div>
+											<div class="worksheet-info">FRONTEND разработчик</div>
+										</li>
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what">Ключевые навыки:</div>
+											<div class="worksheet-info skills">
+												<ul class="skills-list">
+												<li class="skill-item">html</li>
+												<li class="skill-item">css</li>
+												<li class="skill-item">javascript</li>
+												<li class="skill-item">gulp</li>
+												<li class="skill-item">git</li>	
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+					</section>
+					<section class="aboutbox">
+						<h2 class="aboutbox-header">Опыт работы</h2>
+							<div class="aboutbox-body clearfix">
+								<div class="jobs-wrap">
+									<ul class="about-list">
+										<li class="about-item">
+											<div class="place work">Центр светодиодных и оптоэлектронных технологий
+												<p class="time">Декабрь 2012 - по настоящее время</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+					</section>
+					<section class="aboutbox">
+						<h2 class="aboutbox-header">Образование</h2>
+							<div class="aboutbox-body clearfix">
+								<div class="education-wrap">
+									<ul class="about-list">
+										<li class="about-item">
+											<div class="place education">Высшее. БГУИР
+												<p class="time">Сентябрь 2008 - июль 2013</p>
+											</div>
+										</li>
+										<li class="about-item ">
+											<div class="place course">Курсы Loftschool.ru
+												<p class="time">Сентябрь 2015 - по настоящее время</p>
+											</div>
+											
+										</li>
+									</ul>
+								</div>
+							</div>
+					</section>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<footer class="page-footer">
+		<div class="container">	
+		 <div class="lock">
+		 	<a href="login.html" class="lock-inner">Войти</a>
+		 </div>	
+		 <div class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>	
+		</div>
+	</footer>
+	<!--build:js js/vendor.js-->
+	<!-- bower:js-->
+	<script src="bower/jquery/jquery.js"></script>
+	<script type="bower/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<!-- endbower-->
+	<!--endbuild-->
+	<!--build:js js/main.js-->
+	<script type="text/javascript" src="js/console-ie8.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/placeholder.js"></script>
+	
+	<!--endbuild-->
+</body>
+</html>

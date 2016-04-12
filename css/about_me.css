@@ -1,0 +1,117 @@
+/*Общие классы*/
+.aboutbox{
+	background-color:#eff3f7;
+	margin-bottom: 35px;
+}
+
+.aboutbox .worksheet-wrap{
+	float: right;
+	width: 400px;
+}
+.aboutbox .aboutbox-header{
+	border-bottom: 3px solid #3ba8c0;
+    color: #3ba8c0;
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    line-height: 70px;
+    margin: 0 0 21px 0;
+    padding: 0 21px;
+    display: inline-block;
+}
+.about-list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*Общие классы - конец*/
+
+/*Основная информация*/
+.worksheet-info{
+	float: left;
+	margin-left: 25px;
+	max-width: 260px;
+}
+.worksheet-item{
+	margin-bottom: 8px;
+}
+.worksheet-what{
+	font-family: 'fira_sansmedium';
+	font-size: 16px;
+	float: left;
+}
+.worksheet-info{
+	font-family: 'fira_sansbook';
+	font-size: 15px;
+	overflow: hidden;
+	max-width: 218px;
+}
+.avatar-box{
+	width: 142px;
+	height: 142px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border: 5px solid #3ba8c0;
+}
+.image-wrap{
+	float: left;
+	margin-left: 55px;
+	margin-top: 18px;
+}
+
+ .skills-list .skill-item{
+	font-family: 'proxima_nova_condensedSBd';
+	border-radius: 4px;
+	padding: 0px 7px;
+	margin-right: 6px;
+	color: #fff;
+	display: inline-block;
+	line-height: 20px;
+	min-width: 40px;
+	text-align: center;
+	background: -webkit-linear-gradient(top, #3ba8c0 50%, #2e8ca2 -100%);
+	background: -o-linear-gradient(top, #3ba8c0 50%, #2e8ca2 -100%);
+    background: -moz-linear-gradient(top, #3ba8c0 50%, #2e8ca2 -100%);
+}
+.skills-list {
+    float: right;
+    padding: 0 0 23px 0;
+    
+}
+/*Основная информация - конец*/
+
+/*Опыт работы и Образование*/
+ .about-item{
+	padding-bottom: 28px;
+}
+
+ .place{
+    color: #5a636b;
+    font-family: "fira_sansbook";
+    font-size: 17px;
+    padding-left: 60px;
+    max-width: 500px;
+}
+ .place.work{
+    background: url(../img/case.png) left center no-repeat;
+	margin-left: 55px;
+}
+ .place.education{
+    background: url(../img/hat.png) left center no-repeat;
+	margin-left: 55px;
+}
+ .place.course{
+    background: url(../img/note.png) left center no-repeat;
+	margin-left: 55px;
+}
+ .place .time{
+	color: #828990;
+    font-family: "fira_sanslight";
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 60px;
+    max-width: 500px;
+    margin:0;
+    padding: 0;
+}
+
+/*Опыт работы и Образование-конец*/

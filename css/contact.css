@@ -1,0 +1,132 @@
+.contactbox{
+	background-color:#eff3f7;
+	margin-bottom: 35px;
+	min-height: 841px;
+	border-radius: 5px;
+}
+
+.contactbox .contact-header{
+	background-color: rgb( 72, 203, 232 );
+    color: #ffffff;
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    line-height: 125px;
+    margin: 0 0 21px 0;
+    text-align: center;
+    border-bottom: 15px solid rgb( 103, 223, 250 ); 
+	border-radius: 5px 5px 0 0;
+	font-weight: normal;
+}
+
+.contactbox .formfield{
+	margin: 50px auto;
+	padding-bottom: 200px;
+	width: 400px;
+}
+
+.formfield .leftnote{
+	float: left;
+	width:192px;
+}
+
+.formfield .rightnote{
+	float: right;
+	width:192px;
+}
+
+.formfield .note{
+  font-size: 19px;
+  font-family: "Fira Sans";
+  color: rgb( 149, 154, 168 );
+  text-align: left;
+
+}
+
+.formfield .insidetext{
+	width: 185px;
+	font-size: 13px;
+	font-family: 'fira_sanslight';
+	color: #78d5ec;
+	text-indent: 5px;
+	height: 40px;
+	border: 1px solid #48cbe8;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+
+.formfield .message{
+	width: 380px;
+    height: 177px;
+    border: 1px solid #48cbe8;
+    border-radius: 3px 3px;
+    font-family: 'fira_sanslight';
+    font-size: 13px;
+    padding: 10px;
+    resize: none;
+    color: #78d5ec;
+    margin-bottom: 19px;
+}
+
+.formfield .captcha {
+    float: left;
+    width: 190px;
+    height: 80px;
+    background-color: #fbfcfd;
+    border: 1px solid #48cbe8;
+    border-radius: 4px;
+    background: url(../img/capcha.png) #ffffff center no-repeat;
+ }
+
+.formfield .enterfield{
+	float:right;
+	margin-top: 20px;
+	padding: 8px;
+	border: 1px solid rgb( 72, 203, 232 );
+	border-radius: 3px;
+	width: 180px;
+	font-size: 13px;
+	font-family: 'fira_sanslight';
+	color: #78d5ec;
+}
+
+.formfield .control {
+    float: left;
+    padding-top: 20px;
+    width: 100%;
+}
+.formfield .button{
+	padding: 8px 21px 4px;
+    
+    border-radius: 5px;
+    color: white;
+    font-family: 'fira_sansbook';
+    font-size: 19px;
+    font-weight: 300;
+    border: none;
+    box-shadow: 0px 3px 0 0 #3ba8c0;
+}
+.button:hover{
+    background-color: #9ac5f0!important;
+}
+
+.buttton:active{
+  background-color: #9ac5f0!important;
+}
+
+.button.left{
+	float: left;
+    background-color: #48cbe8;
+}
+
+.button.right{
+	float: right;
+    background-color: #849db5;
+}
+
+input::-webkit-input-placeholder { 
+  color: #48cbe8; 
+}
+
+textarea::-webkit-input-placeholder { 
+  color: #48cbe8; 
+}

@@ -1,0 +1,90 @@
+/*-------------------login page---------------------*/
+.lock-inner{
+	visibility: hidden;
+}
+.window{
+	margin:0 auto;
+	padding:0;
+	height: 484px;
+	width: 590px;
+	border-radius: 3px;
+	background-color: #eff3f7;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	margin-top: 120px;
+	margin-bottom: 50px;
+}
+.login{
+	height: 106px;
+	border-radius: 3px;
+	background-color: #48cbe8;
+}
+.log{
+	font-family: 'fira_sansbook';
+	font-size: 40px;
+	font-weight: normal;
+	color: #fff;
+	text-align: center;
+	line-height: 95px;
+	margin:0;
+}
+.line{
+	margin-top: -3px;
+	height: 15px;
+	background-color: #67dffa;
+}
+.name2{
+	margin-top: 15px;
+	font-family: 'fira_sanslight';
+	font-size: 36px;
+	color: #959aa8;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-left: 240px;
+}
+.inp{
+	display: block;
+	margin: 0 auto;
+	height: 62px;
+	width: 424px;
+	border: solid 1px #48cbe8;
+	border-radius: 3px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	color: #48cbe8;
+	font-family: 'fira_sanslight';
+ 	font-size: 16px;
+}
+.placeholder{
+	line-height: 60px; /* for IE8*/
+}
+input::-webkit-input-placeholder { 
+	color: #48cbe8; 
+}
+.ent{
+	margin-top: 34px;
+}
+/*------------------Стилизация состояния кнопки---------------*/
+.enter{
+	display: block;
+	margin: 0 auto;
+	width: 226px;
+	height: 50px;
+	background-color: #48cbe8;
+	border-radius: 7px;
+	font-family: 'fira_sansbook';
+	font-size: 36px;
+	color: #fff;
+	border:none;
+	box-shadow: 0 4px #3ba8c0;	
+}
+.enter:hover{
+	box-shadow: none;
+}
+.enter:active{
+	box-shadow: 0 -4px #3ba8c0;
+}
+.enter, .enter:active,
+.enter:focus{
+    outline: none;
+}

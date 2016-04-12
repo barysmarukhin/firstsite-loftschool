@@ -1,0 +1,262 @@
+﻿html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	background: url(../img/pattern.png) repeat;
+	font: normal 1em 'fira-sans';
+	color: #4a545d;
+}
+/*Прибьем футер к низу*/
+.wrapper{
+	position: relative;
+	min-height: 100%;
+	min-width: 970px;
+	height: auto !important;
+}
+.wrapper:after{
+	content: "";
+	height: 80px;
+	display: block;
+}
+.page-footer{
+	min-width: 970px;
+	height: 80px;
+	margin-top: -80px;
+}
+/*Прибьем футер к низу - конец*/
+
+/*Шапка*/
+.container-big{
+	max-width: 1200px;
+	min-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.page-header{
+	height: 119px;
+	background: #eff3f7 url('..//img/line.png') bottom center no-repeat;
+	position: relative;
+	margin-bottom: 39px;
+}
+.page-header .header-logo-link{
+	position: absolute;
+	top: 39px;
+	left: 0px;
+}
+.page-header .header-logo-text{
+	position: absolute;
+	left: -9999px;
+}
+
+.page-header .socials{
+	position: absolute;
+	right: 0px;
+	top:36px;
+}
+/*Шапка - конец*/
+
+/*Блок социальных ссылок*/
+.socials{
+	margin:0;
+	padding: 0;
+	min-width: 260px;
+}
+.socials .socials-item{
+	list-style: none;
+	display: inline-block;
+	height: 47px;
+	width: 47px;
+	margin-left: 19px;
+}
+.socials .socials-item:first-child{
+	margin-left: 0;
+}
+.socials .socials-link{
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-indent: -9999px;
+	background: url(../img/social.png) no-repeat;
+}
+.socials .socials-link.vk{background-position: 0px -49px;}
+.socials .socials-link.tw{background-position: -73px -49px;}
+.socials .socials-link.fb{background-position: -147px -49px;}
+.socials .socials-link.gt{background-position: -220px -49px;}
+/*.socials .socials-link:hover{background-position-y: 0px;}*/
+.socials .socials-link.vk:hover{background-position: 0px 0px;}
+.socials .socials-link.tw:hover{background-position: -73px 0px;}
+.socials .socials-link.fb:hover{background-position: -147px 0px;}
+.socials .socials-link.gt:hover{background-position: -220px 0px;}
+
+/*Блок социальных ссылок - конец*/
+
+/*Сайдбар*/
+.sidebar{
+	width:250px;
+	float: left;
+}
+/*Навигация*/
+.navigation{
+	overflow: hidden;
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
+.navigation .navigation-list{
+	list-style: none;
+	margin:0px;
+	padding: 0px;
+}
+.navigation .navigation-item{
+	border-top: 2px solid #3ba8c0;
+	margin: 0 11px;
+}
+.navigation .navigation-item:first-child{
+	border-top: none;
+}
+/*Навигация - текущий пункт меню*/
+.navigation .navigation-item.current{
+	background: #3ba8c0;
+	margin:0;
+	border-bottom: none;
+	padding-left: 11px;
+	margin-bottom: -2px;/*Хак*/
+}
+.navigation .navigation-item.current .navigation-link{
+	color: #f9fafb;
+	font-size: 22px;
+}
+/*Навигация - текущий пункт меню - конец*/
+.navigation .navigation-link{
+	font-family: 'fira_sansbook';
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	color: #959aa8;
+	margin-left: 16px;
+	padding: 20px 0px;
+}
+.navigation .navigation-link:hover{
+	color: #3ba8c0;
+}
+.navigation .navigation-item:hover{
+	color: #3ba8c0;
+}
+/*Контакты*/
+.contacts .navigation-list{
+	list-style: none;
+	margin:0px;
+	padding: 0px;
+}
+.contacts {
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 26px;
+}
+.contacts .contact-item:first-child{
+	background: #3ba8c0;
+    color: #ffffff;
+    font-family: 'fira_sansbook';
+    font-style: normal;
+    font-size: 21px;
+    padding: 6px 2px 5px 19px;
+}
+.contacts .contact-item{
+    padding: 11px 2px 7px 60px;
+}
+.contacts .contact-link{
+	color: #ffffff;
+    font-family: 'fira_sansbook';
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+}
+.contacts .contact-link:hover{
+    text-decoration: underline;
+}
+.contacts .contact-item.mail{
+	background: #41b9d4 url(../img/mail.png) 20px no-repeat;
+}
+.contacts .contact-item.phone{
+	background: #48cbe8 url(../img/phone.png) 20px no-repeat;
+}
+.contacts .contact-item.skype{
+	background: #51daf8 url(../img/skype.png) 20px no-repeat;
+}
+/*Контакты-конец*/
+/*Навигация - конец*/
+
+/*Главная область*/
+.variable-content{
+	width: 650px;
+	float: right;
+}
+/*Главная область - конец*/
+
+/*Футер*/
+.page-footer{
+	background: #eff3f7 url(../img/line.png) top center no-repeat;
+	font-family: 'fira_sanslight';
+	color:#4a545d;
+}
+.page-footer .container{
+	padding-top: 23px;
+	position: relative;
+}
+.page-footer .copyright{
+	margin: 0 180px;
+	padding-top:7px;
+	text-align: center;
+	font-size: 13px;
+}
+/*Логин*/
+.page-footer .lock{
+	position: absolute;
+	top:26px;
+	left: 20px;
+}
+.lock .lock-inner{
+	display: block;
+	height: 40px;
+	font-family: 'fira_sansbook';
+	font-size: 16px;
+	line-height: 2.2;
+	color:#4a545d;
+	text-decoration: none;
+	background: url(../img/login.png) no-repeat;
+	padding-left: 24px;
+}
+.lock .lock-inner:hover{
+	text-decoration: underline;
+	background: url(../img/login_open.png) no-repeat;
+}
+/*Конец логина*/
+/*Конец футера*/
+
+/*Общие классы*/
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+.text-center{
+	text-align: center;
+}
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right !important;
+}
+/*clearfix*/
+.container:before, .clearfix:before,
+.container:after, .clearfix:after {
+	content: " ";/*1*/
+	display: table;/*2*/
+}
+.container:after, .clearfix:after{
+	clear: both;
+}
+/*clearfix - конец*/
+/*общие классы - конец*/

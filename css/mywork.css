@@ -1,0 +1,289 @@
+.portfolio{
+	background-color:#eff3f7;
+	margin-bottom: 35px;
+	min-height: 841px;
+}
+.portfolio .work-header{
+	border-bottom: 3px solid #3ba8c0;
+    color: #3ba8c0;
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    line-height: 70px;
+    margin: 0 0 21px 0;
+    padding: 0 21px;
+    display: inline-block;
+}
+.portfolio .portfolio-container{
+	margin-left: -10px;
+}
+.portfolio .portfolio-item{
+	display: inline-block;
+  vertical-align: top;
+	min-height: 127px;
+	width: 181px;
+	margin-left: 30px;
+	margin-bottom: 40px;
+
+}
+.portfolio-item .image{
+    width: 181px;
+ 	  height: 127px;
+  	border:2px solid rgb( 59, 168, 192 );
+  	border-radius: 7px;
+  	margin-bottom: 5px;
+    position:relative;
+    background-color: rgba(1, 108, 164, 0.75);
+}
+.hovertext{
+  border-width: 2.5px;
+  border-color: rgb( 239, 243, 247 );
+  border-style: solid;
+  border-radius: 4px;
+  position: absolute;
+  left: 55px;
+  top: 37px;
+  width: 63px;
+  height: 18px;
+  font-size: 12px;
+  padding: 3px;
+  font-family: 'fira_sansbook';
+  color: rgb( 239, 243, 247 );
+  text-align: center; 
+}
+
+.portfolio-item .imagelink{
+  	display: block;
+    width: 181px;
+    height: 127px;
+    position: absolute;
+}
+
+.imagelink .linktext{
+  text-indent: -9999px;
+}
+.portfolio-item .sitename{
+	margin-bottom: 5px;
+}
+.portfolio-item .textlink {
+  font-size: 13px;
+  font-family: 'fira_sanslight';
+  font-style: italic;
+  color: #7bbed0;
+  margin-left: 60px;
+  text-decoration: none;
+}
+.portfolio-item .description{
+  font-size: 15px;
+  font-family: "fira_sanslight";
+  color: rgb( 74, 84, 93 );
+  text-align: center;
+  display: inline-block;
+  line-height: 20px;
+  width: 175px;
+  margin: 0 0 0 6px;
+}
+.portfolio-item .add{
+    width: 181px;
+    height: 127px;
+    border:2px dashed #3ba8c0;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+.portfolio-item .addlink{
+    background: url(../img/add.png) no-repeat;
+    background-position: 75px 35px;
+    width: 181px;
+    height: 127px;
+    display: block;
+    text-decoration: none;
+}
+.portfolio-item .addnew{
+  font-size: 13px;
+  font-family: 'fira_sanslight';
+  color: #7bbed0;
+  width: 110px;
+  text-decoration: none;
+  padding-top: 75px;
+  margin-left:40px;
+}
+
+
+/*Всплывающее окно*/
+.modal-wrapper{
+   height: 100%;
+   max-width: 365px;
+   border-radius:5px;
+   background-color: #eff3f7;
+   box-shadow: 0px 6px 13px 4px rgb( 13, 16, 7 );
+}
+
+ .modal-header{
+    background-color: rgb( 72, 203, 232 );
+    position: relative;
+    border-radius:5px;
+    border-bottom: 10px solid rgb( 103, 223, 250 );
+    margin-bottom: 5px;
+}
+
+ .b-close{
+    position: absolute;
+    background: url(../img/b-close.png) no-repeat;
+    width: 25px;
+    height: 25px;  
+    border:none;
+    top: 15px;
+    right: 15px; 
+}
+
+ .modal-title{
+    color: #ffffff;
+    font-family: 'fira_sansregular';
+    font-weight: normal;
+    font-size: 23px;
+    margin: 0 0 0 20px;
+    padding: 10px 0;
+}
+
+.modal-wrapper .modal-body{
+padding: 0 20px;
+}
+
+.server-mes{
+  border:1px solid;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 100%;
+  padding: 6px 12px;
+  margin-bottom: 6px;
+  display: none;
+  box-sizing:border-box;
+
+}
+
+.error-mes{
+  border-color:#f97e76;
+  background-color:#fad2d1;
+  color:#f97e76;
+}
+
+.success-mes{
+  border-color:#b8e1ce;
+  background-color:#49bb7b;
+  color:#49bb7b;
+  width:100%;
+  box-sizing:border-box;
+}
+
+ .form-group{
+  margin-bottom: 12px;
+}
+
+ .label{
+  font-size: 17px;
+  font-family: "Fira Sans";
+  color: rgb( 149, 154, 168 );
+}
+
+ .input{
+  height: 40px;
+  border: 1px solid #48cbe8;
+  border-radius: 3px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+ .fileupload-wrapper{
+ position: relative;
+}
+
+ .fileupload-label{
+  background: url(../img/addfile.png) right no-repeat;
+  position: absolute;
+  height: 40px;
+  display: block;
+  padding:0 130px;
+  width: 53px;
+  right:0;
+  bottom: 0;
+  
+}
+
+ .fileupload{
+  position: absolute;
+  top: 0;
+  left: -9999px;
+
+}
+
+.input,.textarea{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  font-family: 'fira_sanslight';
+  font-size: 13px;
+  text-indent: 5px;
+  color:#48cbe8;
+  padding: 12px 12px;
+  width: 100%;
+}
+
+input::-webkit-input-placeholder { 
+  color: #48cbe8; 
+}
+
+textarea::-webkit-input-placeholder { 
+  color: #48cbe8; 
+}
+
+ .textarea{
+  display: block;
+  height: 110px;
+  border: 1px solid #48cbe8;
+  border-radius:4px;
+  resize: none;
+  color:#48cbe8;
+  
+}
+.btn-wrapp{
+  margin-left:85px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  border-radius: 5px;
+  background-color: rgb( 72, 203, 232 );
+  box-shadow: 1px 1px 1px 1px gray;
+  width: 141px;
+  height: 32px;
+  font-size: 18px;
+  font-family: 'fira_sansbook';
+  color: #f6f6f6;
+  padding: 0px 20px;
+  border: solid #3ba8c0;
+  border-width: 0 0 20px 0;
+}
+.btn:active{
+  border-top: 2px solid #3ba8c0;
+}
+
+.btn:hover{
+  border-top: 2px solid #3ba8c0;
+}
+
+/*Прячем модальное окно*/
+#new-project-popup{
+  display: none;
+}
+
+
+.Скругленный_прямоугольник_14_копия {
+  border-width: 2.5px;
+  border-color: rgb( 239, 243, 247 );
+  border-style: solid;
+  border-radius: 4px;
+  width: 63px;
+  height: 18px;
+  z-index: 132;
+}
+
